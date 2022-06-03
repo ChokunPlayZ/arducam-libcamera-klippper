@@ -76,15 +76,19 @@ sudo nano /usr/local/bin/webcamd
  use `CTRL + V` for tabby terminal 
  10. save webcamd file
  just `CTRL + X` then `Y` then `ENTER`
- 11. add following content to your `webcam.txt` config file
+ 11. Add execute permission to webcamd file
+ ```
+ sudo chmod +x /usr/local/bin/webcamd
+ ```
+ 12. add following content to your `webcam.txt` config file
 ```
 camera_libcamera_options="-f 30 -r 640x480"
 ```
-12. change this option in your `webcam.txt` file
+13. change this option in your `webcam.txt` file
 ```
 camera="libcamera"
 ```
- 13. restart webcamd service
+ 14. restart webcamd service
  this process can be done in many way
  you can just run
  ```
